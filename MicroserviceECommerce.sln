@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceECommerce.Domai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceECommerce.Persistance", "Order\Infrastructure\MicroserviceECommerce.Persistance\MicroserviceECommerce.Persistance.csproj", "{CB1F0AED-FA95-4863-B5E2-A8AB29B6A03A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceECommerce.WebApi", "Order\Presentation\MicroserviceECommerce.WebApi\MicroserviceECommerce.WebApi.csproj", "{8987535B-0564-415C-BE64-D770757C75CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceECommerce.Order.WebApi", "Order\Presentation\MicroserviceECommerce.WebApi\MicroserviceECommerce.Order.WebApi.csproj", "{8987535B-0564-415C-BE64-D770757C75CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
