@@ -1,10 +1,13 @@
 ﻿using MicroserviceECommerce.Catalog.Dtos.CategoryDtos;
 using MicroserviceECommerce.Catalog.Services.CategoryServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using OpenIddict.Validation.AspNetCore;
 
 namespace MicroserviceECommerce.Catalog.Controllers
 {
+    [Authorize(AuthenticationSchemes = OpenIddictValidationAspNetCoreDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
     public class CategoryController : ControllerBase
