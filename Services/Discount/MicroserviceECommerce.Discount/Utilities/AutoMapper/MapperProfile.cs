@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using MicroserviceECommerce.Discount.Dtos.DiscountDtos;
+using MicroserviceECommerce.Discount.Dtos.CouponDtos;
 using MicroserviceECommerce.Discount.Entities;
 
 namespace MicroserviceECommerce.Discount.Utilities.AutoMapper

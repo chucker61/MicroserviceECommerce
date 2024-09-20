@@ -12,12 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\MicroserviceECommerce.Application\MicroserviceECommerce.Application.csproj" />
-    <ProjectReference Include="..\..\Core\MicroserviceECommerce.Domain\MicroserviceECommerce.Domain.csproj" />
+    <Folder Include="Context\Configs\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Context\Configs\" />
+    <ProjectReference Include="..\..\Core\MicroserviceECommerce.Order.Application\MicroserviceECommerce.Order.Application.csproj" />
+    <ProjectReference Include="..\..\Core\MicroserviceECommerce.Order.Domain\MicroserviceECommerce.Order.Domain.csproj" />
   </ItemGroup>
 
 </Project>

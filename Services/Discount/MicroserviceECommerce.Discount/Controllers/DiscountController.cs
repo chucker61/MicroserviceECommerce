@@ -1,4 +1,4 @@
-﻿using MicroserviceECommerce.Discount.Dtos.DiscountDtos;
+﻿using MicroserviceECommerce.Discount.Dtos.CouponDtos;
 using MicroserviceECommerce.Discount.Services.DiscountServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

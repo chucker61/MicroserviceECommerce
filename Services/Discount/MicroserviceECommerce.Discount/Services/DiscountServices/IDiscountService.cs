@@ -1,4 +1,4 @@
-﻿using MicroserviceECommerce.Discount.Dtos.DiscountDtos;
+﻿using MicroserviceECommerce.Discount.Dtos.CouponDtos;
 
 namespace MicroserviceECommerce.Discount.Services.DiscountServices
 {

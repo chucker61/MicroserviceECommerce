@@ -1,4 +1,4 @@
-﻿namespace MicroserviceECommerce.Discount.Dtos.DiscountDtos
+﻿namespace MicroserviceECommerce.Discount.Dtos.CouponDtos
 {
     public record ResultDiscountCouponDto
     {

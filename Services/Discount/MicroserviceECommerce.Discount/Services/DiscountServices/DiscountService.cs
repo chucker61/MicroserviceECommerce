@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Dapper;
 using MicroserviceECommerce.Discount.Context;
-using MicroserviceECommerce.Discount.Dtos.DiscountDtos;
+using MicroserviceECommerce.Discount.Dtos.CouponDtos;
 using MicroserviceECommerce.Discount.Entities;
 using Microsoft.EntityFrameworkCore;
 
