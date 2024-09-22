@@ -9,20 +9,21 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace MicroserviceECommerce.Persistance.Migrations
+namespace MicroserviceECommerce.Order.Persistance.Migrations
 {
     [DbContext(typeof(OrderContext))]
-    [Migration("20240916125115_init")]
+    [Migration("20240922072840_init")]
     partial class init
     {
+        /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.33")
+                .HasAnnotation("ProductVersion", "8.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.Entity("MicroserviceECommerce.Domain.Entities.Address", b =>
                 {
@@ -30,7 +31,7 @@ namespace MicroserviceECommerce.Persistance.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("City")
                         .IsRequired()
@@ -91,7 +92,7 @@ namespace MicroserviceECommerce.Persistance.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("OrderingId")
                         .HasColumnType("int");
@@ -126,7 +127,7 @@ namespace MicroserviceECommerce.Persistance.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");

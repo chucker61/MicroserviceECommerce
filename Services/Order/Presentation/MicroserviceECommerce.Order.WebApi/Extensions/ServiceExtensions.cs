@@ -10,7 +10,7 @@ namespace MicroserviceECommerce.WebApi.Extensions
         public static void ConfigureSqlConnection(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<OrderContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection") , x=> x.MigrationsAssembly("MicroserviceECommerce.Persistance")));
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection") , x=> x.MigrationsAssembly("MicroserviceECommerce.Order.Persistance")));
         }
 
         public static void RegisterHandlers(this IServiceCollection services)

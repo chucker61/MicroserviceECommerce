@@ -5,8 +5,6 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{833DB086-B892-495D-9048-C791F5C4BE7A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{43E62E34-7C6B-4C86-8305-59CF11CDBBD2}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Category", "Category", "{363E8287-05F2-41AE-B619-F9627B25FE1C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{0BDA9A40-A373-4899-BDC5-45060DA2CC8C}"
@@ -31,7 +29,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceECommerce.Order
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceECommerce.Order.WebApi", "Services\Order\Presentation\MicroserviceECommerce.Order.WebApi\MicroserviceECommerce.Order.WebApi.csproj", "{AB17796E-6CD5-438D-AAD5-4FAB27B2736F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceECommerce.Identity", "Identity\MicroserviceECommerce.Identity\MicroserviceECommerce.Identity.csproj", "{6E1C79DA-E5A2-425A-8C2A-C49BE180815C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{C8268494-B0DB-477A-8A9A-0F177C65EF79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorServer", "BlazorServer", "{84806E2B-E61D-46C8-86C5-710586728756}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceECommerce.BlazorServer", "Clients\BlazorServer\MicroserviceECommerce.BlazorServer\MicroserviceECommerce.BlazorServer.csproj", "{2E05A012-7F5B-445C-9F01-FEB021404B3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthServer", "AuthServer", "{6F592A62-CA76-47FB-8382-1CEFBFADF909}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceECommerce.AuthServer", "AuthServer\MicroserviceECommerce.AuthServer\MicroserviceECommerce.AuthServer.csproj", "{4427E299-D022-43EC-AFD4-30A288875CAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,10 +69,14 @@ Global
 		{AB17796E-6CD5-438D-AAD5-4FAB27B2736F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB17796E-6CD5-438D-AAD5-4FAB27B2736F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB17796E-6CD5-438D-AAD5-4FAB27B2736F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6E1C79DA-E5A2-425A-8C2A-C49BE180815C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E1C79DA-E5A2-425A-8C2A-C49BE180815C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E1C79DA-E5A2-425A-8C2A-C49BE180815C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E1C79DA-E5A2-425A-8C2A-C49BE180815C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E05A012-7F5B-445C-9F01-FEB021404B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E05A012-7F5B-445C-9F01-FEB021404B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E05A012-7F5B-445C-9F01-FEB021404B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E05A012-7F5B-445C-9F01-FEB021404B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4427E299-D022-43EC-AFD4-30A288875CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4427E299-D022-43EC-AFD4-30A288875CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4427E299-D022-43EC-AFD4-30A288875CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4427E299-D022-43EC-AFD4-30A288875CAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,7 +94,9 @@ Global
 		{380D955B-ECDC-462A-B23C-3675BE057C94} = {48F8980D-973C-4DDF-A173-2FCB64A2F661}
 		{C9C2EFCF-9133-493C-8072-55726F108877} = {DD911BC0-8B41-4CD8-9E4E-2F82EF3F5566}
 		{AB17796E-6CD5-438D-AAD5-4FAB27B2736F} = {7B13FC5B-F3C7-4CCD-9626-3BB610748496}
-		{6E1C79DA-E5A2-425A-8C2A-C49BE180815C} = {43E62E34-7C6B-4C86-8305-59CF11CDBBD2}
+		{84806E2B-E61D-46C8-86C5-710586728756} = {C8268494-B0DB-477A-8A9A-0F177C65EF79}
+		{2E05A012-7F5B-445C-9F01-FEB021404B3D} = {84806E2B-E61D-46C8-86C5-710586728756}
+		{4427E299-D022-43EC-AFD4-30A288875CAC} = {6F592A62-CA76-47FB-8382-1CEFBFADF909}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4E0D5159-3B0A-4EC6-9D5A-A17DEA6A48DC}

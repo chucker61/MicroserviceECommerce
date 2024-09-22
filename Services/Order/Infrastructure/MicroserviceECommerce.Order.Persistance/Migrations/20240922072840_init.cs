@@ -3,10 +3,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace MicroserviceECommerce.Persistance.Migrations
+namespace MicroserviceECommerce.Order.Persistance.Migrations
 {
+    /// <inheritdoc />
     public partial class init : Migration
     {
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -78,6 +80,7 @@ namespace MicroserviceECommerce.Persistance.Migrations
                 column: "OrderingId");
         }
 
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
