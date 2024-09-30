@@ -2,6 +2,7 @@
 using MicroserviceECommerce.Catalog.Services.ProductDetailServices;
 using MicroserviceECommerce.Catalog.Services.ProductImageServices;
 using MicroserviceECommerce.Catalog.Services.ProductService;
+using MicroserviceECommerce.Catalog.Services.LoggerService;
 
 namespace MicroserviceECommerce.Catalog.Services
 {
@@ -11,5 +12,6 @@ namespace MicroserviceECommerce.Catalog.Services
         ICategoryService CategoryService { get; }
         IProductDetailService ProductDetailService { get; }
         IProductImageService ProductImageService { get; }
+        ILoggerService LoggerService { get; }
     }
 }

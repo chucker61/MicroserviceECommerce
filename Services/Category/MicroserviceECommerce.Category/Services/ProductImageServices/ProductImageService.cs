@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MicroserviceECommerce.Catalog.Dtos.ProductImageDtos;
-using MicroserviceECommerce.Catalog.Entities;
 using MicroserviceECommerce.Catalog.Settings;
+using MicroserviceECommerce.Catalog.Entities.Models;
 using MongoDB.Driver;
 
 namespace MicroserviceECommerce.Catalog.Services.ProductImageServices

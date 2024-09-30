@@ -1,5 +1,6 @@
 ﻿using MicroserviceECommerce.Discount.Dtos.CouponDtos;
 using MicroserviceECommerce.Discount.Services.DiscountServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,10 +8,10 @@ namespace MicroserviceECommerce.Discount.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DiscountsController : ControllerBase
+    public class DiscountController : ControllerBase
     {
         private readonly IDiscountService _discountService;
-        public DiscountsController(IDiscountService discountService)
+        public DiscountController(IDiscountService discountService)
         {
             _discountService = discountService;
         }

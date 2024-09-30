@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
 using MicroserviceECommerce.Catalog.Dtos.CategoryDtos;
-using MicroserviceECommerce.Catalog.Entities;
 using MicroserviceECommerce.Catalog.Settings;
 using MongoDB.Driver;
+using MicroserviceECommerce.Catalog.Entities.Models;
 
 namespace MicroserviceECommerce.Catalog.Services.CategoryServices
 {
     public class CategoryService : ICategoryService
     {
-        private readonly IMongoCollection<Category> _categoryCollection;
+        private readonly IMongoCollection<MicroserviceECommerce.Catalog.Entities.Models.Category> _categoryCollection;
         private readonly IMapper _mapper;
         public CategoryService(IMapper mapper,IDatabaseSettings databaseSettings)
         {

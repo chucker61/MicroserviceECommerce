@@ -3,7 +3,7 @@ using MicroserviceECommerce.Catalog.Dtos.CategoryDtos;
 using MicroserviceECommerce.Catalog.Dtos.ProductDetailDtos;
 using MicroserviceECommerce.Catalog.Dtos.ProductDtos;
 using MicroserviceECommerce.Catalog.Dtos.ProductImageDtos;
-using MicroserviceECommerce.Catalog.Entities;
+using MicroserviceECommerce.Catalog.Entities.Models;
 
 namespace MicroserviceECommerce.Catalog.Mapper
 {

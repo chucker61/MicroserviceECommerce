@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using MicroserviceECommerce.Discount.Dtos.CouponDtos;
-using MicroserviceECommerce.Discount.Entities;
+using MicroserviceECommerce.Discount.Entities.Models;
 
 namespace MicroserviceECommerce.Discount.Utilities.AutoMapper
 {

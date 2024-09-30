@@ -1,4 +1,4 @@
-﻿using MicroserviceECommerce.Discount.Entities;
+﻿using MicroserviceECommerce.Discount.Entities.Models;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
