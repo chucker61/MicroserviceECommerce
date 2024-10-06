@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MicroserviceECommerce.Cargo.Entities.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace MicroserviceECommerce.Cargo.Context
 {
@@ -8,6 +9,10 @@ namespace MicroserviceECommerce.Cargo.Context
         {
         }
 
+        DbSet<CargoCompany> CargoCompanies { get; set; }
+        DbSet<CargoCustomer> CargoCustomers { get; set; }
+        DbSet<CargoDetail> CargoDetails { get; set; }
+        DbSet<CargoOperation> CargoOperations { get; set; }
 
     }
 }

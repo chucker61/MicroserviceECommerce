@@ -10,7 +10,8 @@ namespace MicroserviceECommerce.IdentityServer
             new ApiScope("CatalogFullPermission","Full authority for catalog operations"),
             new ApiScope("CatalogReadPermission","Reading authority for catalog operations"),
             new ApiScope("DiscountFullPermission","Full authority for discount operations"),
-            new ApiScope("OrderFullPermisson","Full authority for order operations"),
+            new ApiScope("OrderFullPermission","Full authority for order operations"),
+            new ApiScope("CargoFullPermission","Full authority for cargo operations"),
             new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
         };
 
@@ -18,8 +19,8 @@ namespace MicroserviceECommerce.IdentityServer
        {
            new ApiResource("ResourceCatalog"){Scopes={ "CatalogFullPermission", "CatalogReadPermission" } },
            new ApiResource("ResourceDiscount"){Scopes={"DiscountFullPermission"} },
-           new ApiResource("ResourceOrder"){Scopes={"OrderFullPermisson"}},
-           new ApiResource("ResourceMessage"){Scopes={"MessageFullPermission"} },
+           new ApiResource("ResourceOrder"){Scopes={"OrderFullPermission"}},
+           new ApiResource("ResourceCargo"){Scopes={"CargoFullPermission"}},
        };
 
         public static IEnumerable<IdentityResource> IdentityResources => new IdentityResource[]
@@ -48,7 +49,7 @@ namespace MicroserviceECommerce.IdentityServer
                 ClientName="Microservice E-Commerce Manager",
                 AllowedGrantTypes=GrantTypes.ClientCredentials,
                 ClientSecrets={new Secret("MicroserviceECommerceSecret".Sha256())},
-                AllowedScopes={"CatalogFullPermission","CatalogReadPermission","DiscountFullPermission",  IdentityServerConstants.LocalApi.ScopeName },
+                AllowedScopes={"CatalogFullPermission","CatalogReadPermission","DiscountFullPermission", "CargoFullPermission", IdentityServerConstants.LocalApi.ScopeName },
             },
             //Admin
             new Client
@@ -57,7 +58,7 @@ namespace MicroserviceECommerce.IdentityServer
                 ClientName="Microservice E-Commerce Admin",
                 AllowedGrantTypes=GrantTypes.ClientCredentials,
                 ClientSecrets={new Secret("MicroserviceECommerceSecret".Sha256())},
-                AllowedScopes={"CatalogFullPermission","CatalogReadPermission","DiscountFullPermission","OrderFullPermission",  IdentityServerConstants.LocalApi.ScopeName },
+                AllowedScopes={"CatalogFullPermission","CatalogReadPermission","DiscountFullPermission","OrderFullPermission", "CargoFullPermission", IdentityServerConstants.LocalApi.ScopeName },
             },
 
         };

@@ -39,7 +39,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceECommerce.Ident
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cargo", "Cargo", "{0DF327DF-ABA6-4CE3-A811-64E2C64E3085}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceECommerce.Cargo", "Services\Cargo\MicroserviceECommerce.Cargo\MicroserviceECommerce.Cargo.csproj", "{B6887FD7-EACF-4DF2-A103-EFF1F841845D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceECommerce.Cargo", "Services\Cargo\MicroserviceECommerce.Cargo\MicroserviceECommerce.Cargo.csproj", "{B6887FD7-EACF-4DF2-A103-EFF1F841845D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
