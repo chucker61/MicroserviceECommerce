@@ -1,7 +1,6 @@
 ﻿using MediatR;
-using MicroserviceECommerce.Application.Features.Mediator.Commands.OrderDetailCommands;
-using MicroserviceECommerce.Application.Features.Mediator.Handlers.OrderDetailHandlers;
-using MicroserviceECommerce.Application.Features.Mediator.Queries.OrderDetailQueries;
+using MicroserviceECommerce.Order.Application.Mediator.Commands.OrderDetailCommands;
+using MicroserviceECommerce.Order.Application.Mediator.Queries.OrderDetailQueries;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

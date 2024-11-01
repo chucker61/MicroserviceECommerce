@@ -7,19 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Features\CQRS\**" />
+    <EmbeddedResource Remove="Features\CQRS\**" />
+    <None Remove="Features\CQRS\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\CQRS\Commands\" />
-    <Folder Include="Features\CQRS\Handlers\" />
-    <Folder Include="Features\CQRS\Queries\" />
-    <Folder Include="Features\CQRS\Results\" />
+    <ProjectReference Include="..\MicroserviceECommerce.Order.Domain\MicroserviceECommerce.Order.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MicroserviceECommerce.Order.Domain\MicroserviceECommerce.Order.Domain.csproj" />
+    <Folder Include="Features\" />
   </ItemGroup>
 
 </Project>

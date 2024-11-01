@@ -1,7 +1,6 @@
 ﻿using MediatR;
-using MicroserviceECommerce.Application.Features.Mediator.Commands.AddressCommands;
-using MicroserviceECommerce.Application.Features.Mediator.Handlers.AddressHandlers;
-using MicroserviceECommerce.Application.Features.Mediator.Queries.AddressQueries;
+using MicroserviceECommerce.Order.Application.Mediator.Commands.AddressCommands;
+using MicroserviceECommerce.Order.Application.Mediator.Queries.AddressQueries;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

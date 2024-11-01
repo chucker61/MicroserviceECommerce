@@ -62,3 +62,23 @@
 2024-10-06 11:47:15.4893 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
 2024-10-06 11:47:15.4968 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Chucker\source\repos\MicroserviceECommerce\Services\Discount\MicroserviceECommerce.Discount\bin\Debug\net8.0\nlog.config
 2024-10-06 11:47:15.4968 Info Configuration initialized.
+2024-10-06 14:25:23.6896 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-10-06 14:25:23.7021 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-10-06 14:25:23.7021 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Chucker\source\repos\MicroserviceECommerce\Services\Discount\MicroserviceECommerce.Discount\bin\Debug\net8.0\nlog.config
+2024-10-06 14:25:23.7153 Info Configuration initialized.
+2024-10-06 14:25:24.8342 Info AppDomain Shutting down. LogFactory closing...
+2024-10-06 14:25:24.8394 Info LogFactory has been closed.
+2024-10-06 19:18:52.8946 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-10-06 19:18:52.9052 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-10-06 19:18:52.9052 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Chucker\source\repos\MicroserviceECommerce\Services\Discount\MicroserviceECommerce.Discount\bin\Debug\net8.0\nlog.config
+2024-10-06 19:18:52.9179 Info Configuration initialized.
+2024-10-06 19:18:53.9572 Info AppDomain Shutting down. LogFactory closing...
+2024-10-06 19:18:53.9629 Info LogFactory has been closed.
+2024-10-06 19:19:51.3787 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-10-06 19:19:51.3912 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-10-06 19:19:51.3912 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Chucker\source\repos\MicroserviceECommerce\Services\Discount\MicroserviceECommerce.Discount\bin\Debug\net8.0\nlog.config
+2024-10-06 19:19:51.4090 Info Configuration initialized.
+2024-10-10 16:14:01.8647 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-10-10 16:14:01.8978 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-10-10 16:14:01.9192 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Chucker\source\repos\MicroserviceECommerce\Services\Discount\MicroserviceECommerce.Discount\bin\Debug\net8.0\nlog.config
+2024-10-10 16:14:01.9360 Info Configuration initialized.
