@@ -27,7 +27,7 @@ namespace MicroserviceECommerce.IdentityServer
                         Email = "meliksahmertcakir@hotmail.com",
                         EmailConfirmed = true,
                         Name = "Melikşah Mert",
-                        SurName = "Çakır"
+                        Surname = "Çakır"
                     };
                     var result = userMgr.CreateAsync(user, "123456aA*").Result;
                     if (!result.Succeeded)

@@ -1,6 +1,10 @@
 using Duende.IdentityServer;
 using MicroserviceECommerce.IdentityServer.Data;
+using MicroserviceECommerce.IdentityServer.Dtos;
 using MicroserviceECommerce.IdentityServer.Models;
+using MicroserviceECommerce.IdentityServer.Services;
+using MicroserviceECommerce.IdentityServer.Services.Contracts;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -13,6 +17,7 @@ namespace MicroserviceECommerce.IdentityServer
         {
             builder.Services.AddLocalApiAuthentication();
             builder.Services.AddRazorPages();
+            builder.Services.AddScoped<IRegisterService, RegisterManager>();
 
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -71,6 +76,10 @@ namespace MicroserviceECommerce.IdentityServer
             app.MapRazorPages()
                 .RequireAuthorization();
 
+            app.MapPost("/api/register", async (UserRegisterDto userRegisterDto, IRegisterService registerService) => {
+                var user = await registerService.RegisterAsync(userRegisterDto);
+                return Results.Ok(user);
+            });
             return app;
         }
     }

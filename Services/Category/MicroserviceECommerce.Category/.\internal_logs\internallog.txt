@@ -1,0 +1,6 @@
+2024-11-13 16:35:18.3474 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-11-13 16:35:18.3633 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-11-13 16:35:18.3712 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=/home/meliksahmc/repos/MicroserviceECommerce/Services/Category/MicroserviceECommerce.Category/bin/Debug/net8.0/nlog.config
+2024-11-13 16:35:18.3803 Info Configuration initialized.
+2024-11-13 16:37:43.6388 Info AppDomain Shutting down. LogFactory closing...
+2024-11-13 16:37:43.6464 Info LogFactory has been closed.
